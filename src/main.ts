@@ -83,4 +83,4 @@ const checkTweetUpdate = async () => {
 };
 
 checkTweetUpdate();
-setInterval(checkTweetUpdate, 1000 * 10); // 60s
+setInterval(checkTweetUpdate, 1000 * 60); // 60s
