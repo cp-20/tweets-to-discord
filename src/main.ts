@@ -56,7 +56,7 @@ const userId = await fetchUserIdFromScreenName(TARGET_NAME);
 const checkTweetUpdate = async () => {
   const tweets = await fetchTweetsByUserId(userId, latestTweetId);
 
-  if (tweets.meta.result_count == 0) {
+  if (tweets.meta === undefined || tweets.meta.result_count == 0) {
     return;
   }
 
